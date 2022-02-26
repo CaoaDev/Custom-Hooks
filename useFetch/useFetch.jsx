@@ -6,9 +6,9 @@ export const useFetch = ( url ) => {
     const [first, setFirst] = useState( { data: null, loading: true, error: null } );
 
     useEffect(() => {    
-      return () => {
-        isMounted.current = false;
-      }
+        return () => {
+            isMounted.current = false;
+        }
     }, [])
     
 
